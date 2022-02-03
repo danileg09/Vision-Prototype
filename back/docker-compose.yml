@@ -1,0 +1,16 @@
+services:
+
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: example
+      
+  adminer:
+   image: adminer
+   ports:
+     - "8083:8083"
+   depends_on:
+     - mySQL
+   links:
+     - mySQL

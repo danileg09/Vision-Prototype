@@ -1,5 +1,29 @@
+body{
+    background-color: rgb(160, 160, 160);
+}
+
 .img-border{
-    position: relative;
+    position: absolute;
     width: 100vw;
-    height: 47.6vw;
+    height: 100vh;
+}
+
+main{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    
+}
+
+#imgPrincipal{
+    width: 35vw;
+    
+}
+.container-login{   
+   margin-left:12vw;
+   margin-top:7vw;
+}
+
+.container-form{
+
 }

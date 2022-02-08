@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(160, 160, 160);
+    background-color: rgb(240, 235, 235);
 }
 
 .img-border{
@@ -19,11 +19,24 @@ main{
     width: 35vw;
     
 }
-.container-login{   
-   margin-left:12vw;
-   margin-top:7vw;
+
+#img-logo{
+    position:absolute;
+    margin-top: 55vh;
+    margin-left: -28vw;
+    width: 10vw;
+    
 }
 
-.container-form{
+.container-login{  
+    background-color: white; 
+    margin-left:12vw;
+    margin-top:7vw;
+    padding-right: 40vw;
+       
+}
 
+
+.container-form{
+    
 }

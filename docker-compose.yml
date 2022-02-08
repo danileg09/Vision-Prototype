@@ -10,8 +10,8 @@ services:
       POSTGRES_DB: postgresTest
       POSTGRES_USER: root
       POSTGRES_PASSWORD: root
-    volumes:
-      - ./db_scripts:/docker-entrypoint-initdb.d
+    # volumes:
+    #   - ./db_scripts:/docker-entrypoint-initdb.d
 
                   
     

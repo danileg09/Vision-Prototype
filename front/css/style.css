@@ -21,13 +21,11 @@ main{
 }
 
 #img-logo{
-    position:absolute;
-    margin-top: -5vw;
-    margin-left: 8vw;
+    position: absolute;
+    top: 36vw;
+    left: 19.5vw;
     width: 10vw;
-    box-shadow:;
-    
-    
+    min-width: 50px;
 }
 
 .container-login{  
@@ -36,6 +34,7 @@ main{
     margin-top:7vw;
     padding-right: 40vw;
     padding-bottom:22.4vh ;
+    box-shadow: 0 0 1em black;
 }
 
 .container-loginText{
@@ -61,7 +60,7 @@ main{
 }
 
 .loginText-btn{
-    position:fixed;
+    position:absolute;
     width: 8vw;
     padding: .8vw;
     background: white;
@@ -74,6 +73,7 @@ main{
     cursor:pointer;
     display: block;
     margin-bottom: 1.5vh;
+    min-width: 90px;
     
 }
 

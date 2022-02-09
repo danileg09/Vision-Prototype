@@ -2,25 +2,24 @@ version: '3.1'
 
 services:
 
-  postgresTest:
-    image: postgres
+  mysql:
+    image: mysql:8.0
     ports:
-      - "5432:5432"
+      - "3306:3306"
+    command: --default-authentication-plugin=mysql_native_password
     environment:
-      POSTGRES_DB: postgresTest
-      POSTGRES_USER: root
-      POSTGRES_PASSWORD: root
+      MYSQL_USER: vision
+      MYSQL_PASSWORD: vision
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: mysqlTest
     # volumes:
     #   - ./db_scripts:/docker-entrypoint-initdb.d
-
-                  
     
-
   adminer:
    image: adminer
    ports:
      - "8080:8080"
    depends_on:
-     - postgresTest
+     - mysql
    links:
-    - postgresTest
+    - mysql

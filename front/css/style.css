@@ -35,7 +35,7 @@ main{
     margin-left:12vw;
     margin-top:7vw;
     padding-right: 40vw;
-    padding-bottom:30.5vh ;
+    padding-bottom:22.4vh ;
 }
 
 .container-loginText{
@@ -56,14 +56,14 @@ main{
 }
 
 .sla{
-    margin-top: -31vh;
+    margin-top: -23vh;
     margin-left: 8vw;
 }
 
 .loginText-btn{
-    position:absolute;
-    width: 13%;
-    padding: 15px;
+    position:fixed;
+    width: 8vw;
+    padding: .8vw;
     background: white;
     color:black;
     font-weight: bold;
@@ -73,7 +73,8 @@ main{
     transition: 1s all;
     cursor:pointer;
     display: block;
-    margin: 40px 0;
+    margin-bottom: 1.5vh;
+    
 }
 
 .loginText-btn:hover{

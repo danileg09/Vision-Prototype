@@ -22,9 +22,11 @@ main{
 
 #img-logo{
     position:absolute;
-    margin-top: 55vh;
-    margin-left: -28vw;
+    margin-top: -5vw;
+    margin-left: 8vw;
     width: 10vw;
+    box-shadow:;
+    
     
 }
 
@@ -33,10 +35,49 @@ main{
     margin-left:12vw;
     margin-top:7vw;
     padding-right: 40vw;
-       
+    padding-bottom:22.4vh ;
 }
 
+.container-loginText{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:white;
+    position:absolute;
+    margin-top: -40vh;
+    margin-left: 5vw;
+    font-weight: bold;
+    font-size:3vw;
+}    
 
-.container-form{
+.loginText-p{
+    margin-top: 1vh;
+    margin-left: 1.2vw;
+    font-weight: 100;
+    font-size:1.5vw;
+}
+
+.sla{
+    margin-top: -23vh;
+    margin-left: 8vw;
+}
+
+.loginText-btn{
+    position:fixed;
+    width: 8vw;
+    padding: .8vw;
+    background: white;
+    color:black;
+    font-weight: bold;
+    font-size: 14px;
+    border:none;
+    border-radius: 15px;
+    transition: 1s all;
+    cursor:pointer;
+    display: block;
+    margin-bottom: 1.5vh;
     
 }
+
+.loginText-btn:hover{
+    background:rgb(241, 241, 245);
+    transform: scale(1.1) ;
+};

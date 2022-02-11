@@ -1,13 +1,100 @@
 body{
+    display: flex;
     background-color: rgb(240, 235, 235);
+    background-image: url(../imgs/backgroundImage.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    
 }
 
-.img-border{
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
+.container{
+    display: flex;
+    margin-left: 11vw;
+    margin-right: 30vw;
+    margin-top: 10vh;
 }
 
+
+.containerLogin{ 
+    background: url(../imgs/imagemPrincipalLogin.png);
+    background-color: white;
+    background-repeat: no-repeat;
+    padding: 14vw;
+    background-size:contain;
+    padding-right: 18vw;
+    
+}
+
+.containerLogin h1, p{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:white;
+    font-weight: bold;
+    font-size: 3vw;
+    margin-left: -11vw;
+}
+
+.containerLogin p{
+    font-weight: 500;
+    font-size: 1.3vw;
+    margin-top:1vw;
+    margin-left:-9vw;
+}
+
+.containerLogin a{
+    margin-left:-6vw;
+    width: 8vw;
+    padding: .8vw;
+    background: white;
+    color:black;
+    font-size: 14px;
+    border:none;
+    border-radius: 15px;
+    transition: 1s all;
+    cursor:pointer;
+    min-width: 75px;
+    text-decoration: none;
+    margin-bottom: -10vh;
+}
+
+.containerLogin a:hover{
+    color:black;
+    background:rgb(241, 241, 245);
+    transform: scale(1.1);
+}
+
+.containerLogin img{
+    position:absolute;
+    width: 10vw;
+    margin-top:10vw;
+    left: 19vw;
+}
+
+.containerForm{
+    flex-direction: column;
+    background-color: white;
+    padding-right: 45%;
+}
+
+.containerForm img{
+    position:absolute;
+    width: 10vw;
+    margin-top:5vh;
+    margin-left:11vw;
+}
+
+.containerForm label, input{
+    position:absolute;
+    width: 10vw;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    box-sizing: border-box;
+}
+
+
+
+/*
 main{
     position: absolute;
     left: 0px;
@@ -21,32 +108,33 @@ main{
 }
 
 #img-logo{
-    position:absolute;
-    margin-top: -5vw;
-    margin-left: 8vw;
+    position: absolute;
+    top: 36vw;
+    left: 19.5vw;
     width: 10vw;
-    box-shadow:;
-    
-    
+    min-width: 50px;
+}
+
+#img-logo2{
+    position: absolute;
+    top: 14vw;
+    left: 56vw;
+    width: 10vw;
+    min-width: 50px; 
 }
 
 .container-login{  
     background-color: white; 
+    background-image: ;
     margin-left:12vw;
     margin-top:7vw;
     padding-right: 40vw;
-    padding-bottom:22.4vh ;
+    padding-bottom:.01vh ;
+    box-shadow: 0 0 1em black;
+    display: flex;
 }
 
-.container-loginText{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color:white;
-    position:absolute;
-    margin-top: -40vh;
-    margin-left: 5vw;
-    font-weight: bold;
-    font-size:3vw;
-}    
+ 
 
 .loginText-p{
     margin-top: 1vh;
@@ -55,18 +143,19 @@ main{
     font-size:1.5vw;
 }
 
-.sla{
-    margin-top: -23vh;
-    margin-left: 8vw;
+.btn-space{
+    
+    margin-top: 65vh;
+    margin-left:-90%;
+    
+
 }
 
 .loginText-btn{
-    position:fixed;
     width: 8vw;
     padding: .8vw;
     background: white;
     color:black;
-    font-weight: bold;
     font-size: 14px;
     border:none;
     border-radius: 15px;
@@ -74,10 +163,63 @@ main{
     cursor:pointer;
     display: block;
     margin-bottom: 1.5vh;
+    min-width: 80px;
+    text-decoration: none;
     
 }
 
 .loginText-btn:hover{
+    color:black;
     background:rgb(241, 241, 245);
     transform: scale(1.1) ;
 };
+
+.label {
+    position: absolute;
+	display:block;
+	font-size: 20px;
+	margin: 5% 0 10px;
+}
+
+
+.input-padrao {
+    text-align: center;
+	display: block;
+	margin: 0 0 20px;
+	padding: 4px 20px;
+	width: 15vw;
+    border-radius: 20px;
+    border-width:.1vw ;
+    border-color:black;
+    min-width: 90px;
+
+}
+
+.form-section1{
+    position:absolute;
+    left:55vw;
+    top:42vh;
+    
+}
+
+.form-section1 label{
+    position:absolute;
+    left: 4vw;
+    background-color: white;
+    top: -1.5vh;
+    min-width: 50px;
+}
+
+.form-section2{
+    position:absolute;
+    left:55vw;
+    top:50vh;
+}
+
+.form-section2 label{
+    position:absolute;
+    left: 5.7vw;
+    background-color: white;
+    top: -1.5vh;
+    min-width: 50px;
+}

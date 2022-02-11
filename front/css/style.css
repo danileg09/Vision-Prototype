@@ -6,7 +6,6 @@ body{
     background-position: center center;
     background-attachment: fixed;
     background-size: cover;
-    
 }
 
 .container{
@@ -14,6 +13,7 @@ body{
     margin-left: 11vw;
     margin-right: 30vw;
     margin-top: 10vh;
+    
 }
 
 
@@ -24,7 +24,8 @@ body{
     padding: 14vw;
     background-size:contain;
     padding-right: 18vw;
-    
+    border-top: 10px solid black;
+    border-left: 10px solid black;
 }
 
 .containerLogin h1, p{
@@ -89,7 +90,7 @@ body{
     width: 10vw;
     margin-top: 10vh;
     margin-bottom: 10vh;
-    box-sizing: border-box;
+    
 }
 
 

@@ -1,16 +1,26 @@
+version: '3.1'
+
 services:
 
-  db:
+  postgresTest:
     image: postgres
-    restart: always
+    ports:
+      - "5432:5432"
     environment:
-      POSTGRES_PASSWORD: example
-      
+      POSTGRES_DB: postgresTest
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: root
+    volumes:
+      - ./db_scripts:/docker-entrypoint-initdb.d
+
+                  
+    
+
   adminer:
    image: adminer
    ports:
-     - "8083:8083"
+     - "8080:8080"
    depends_on:
-     - mySQL
+     - postgresTest
    links:
-     - mySQL
+    - postgresTest

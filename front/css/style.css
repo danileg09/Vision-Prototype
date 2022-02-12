@@ -6,25 +6,35 @@ body{
     background-position: center center;
     background-attachment: fixed;
     background-size: cover;
-    
+    object-fit: contain;
+}
+
+main{
+    display:flex
 }
 
 .container{
     display: flex;
     margin-left: 11vw;
-    margin-right: 30vw;
-    margin-top: 10vh;
+    margin-top: 10vh;  
+   
 }
 
-
-.containerLogin{ 
+.sla{
     background: url(../imgs/imagemPrincipalLogin.png);
     background-color: white;
     background-repeat: no-repeat;
-    padding: 14vw;
     background-size:contain;
+}
+
+.containerLogin{ 
+    padding: 14vw;
     padding-right: 18vw;
-    
+    background-image: url(../imgs/visionRevelarFuturoLogo.png);
+    background-repeat: no-repeat;
+    background-size:10vw ;
+    background-position-x: 7vw;
+    background-position-y: 30vw;
 }
 
 .containerLogin h1, p{
@@ -53,7 +63,6 @@ body{
     border-radius: 15px;
     transition: 1s all;
     cursor:pointer;
-    min-width: 75px;
     text-decoration: none;
     margin-bottom: -10vh;
 }
@@ -71,29 +80,66 @@ body{
     left: 19vw;
 }
 
-.containerForm{
-    flex-direction: column;
+.container-2{
+   background-color:white;
+   display:flex;
+   padding-right: 38vw;
+}
+
+.container-2 img{
+    position: absolute;
+    width: 10vw;
+    height: 7vh;
+    margin-top: 4vh;
+    margin-left: 13vw;
+}
+
+.container-2 label{
     background-color: white;
-    padding-right: 45%;
+    position:absolute;
+    font-size: 1.3vw;
+	margin-left:15vw;
+    margin-top:23vh;
 }
 
-.containerForm img{
+.container-2 input{
     position:absolute;
-    width: 10vw;
-    margin-top:5vh;
-    margin-left:11vw;
+    width: 20vw;
+    height: 5vh;
+    margin-left:8vw;
+    margin-top:24vh;
+    border-radius: 20px;
 }
 
-.containerForm label, input{
-    position:absolute;
-    width: 10vw;
+.form-space{
     margin-top: 10vh;
-    margin-bottom: 10vh;
-    box-sizing: border-box;
+}
+.form-space label{
+    margin-left:16vw;
 }
 
+.form-space input{
+    text-align: center;
+}
 
+.btn-form{
+    position: absolute;
+    width: 9vw;
+    padding: .8vw;
+    background:orange;
+    color:white;
+    font-size: 14px;
+    border:none;
+    border-radius: 15px;
+    transition: 1s all;
+    cursor:pointer;
+    margin-left:13vw;
+    margin-top:40vh;
+}
 
+.btn-form:hover{
+    transform: scale(1.1);
+}
 /*
 main{
     position: absolute;

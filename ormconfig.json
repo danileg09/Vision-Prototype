@@ -6,7 +6,7 @@
     "password": "vision",
     "database": "mysqlTest",
     "entities": ["src/main/model/*.ts"],
-    "migrations": ["./src/database/migrations/*.s"],
+    "migrations": ["./src/database/migrations/*.ts"],
     "cli": {
         "migrationsDir": "dist/database/migrations"
     }

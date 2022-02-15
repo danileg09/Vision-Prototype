@@ -8,22 +8,26 @@ export class CreateUsersTable1644431045050 implements MigrationInterface {
                 name: "Users",
                 columns: [
                     {
-                        name: 'user_id',
-                        type: 'serial',
+                        name: 'id',
+                        type: 'bigint',
                         isPrimary: true
                     },
                     {
-                        name: 'user_name',
+                        name: 'admin',
+                        type: 'boolean'
+                    },
+                    {
+                        name: 'name',
                         type: 'varchar',
                         isUnique: true
                     },
                     {
-                        name: 'user_email',
+                        name: 'email',
                         type: 'varchar',
                         isUnique: true
                     },
                     {
-                        name: 'user_password',
+                        name: 'password',
                         type: 'varchar'
                     },
                     {

@@ -12,9 +12,9 @@ services:
       MYSQL_PASSWORD: vision
       MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: mysqlTest
-    # volumes:
-    #   - ./db_scripts:/docker-entrypoint-initdb.d
-    
+    volumes:
+      - ./db_scripts:/docker-entrypoint-initdb.d
+    # npx typeorm migration:run |
   adminer:
    image: adminer
    ports:

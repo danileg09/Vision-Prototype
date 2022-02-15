@@ -5,8 +5,8 @@
     "username": "vision",
     "password": "vision",
     "database": "mysqlTest",
-    "entities": ["./dist/main/domain/entities/*.js"],
-    "migrations": ["./dist/database/migrations/*.js"],
+    "entities": ["src/main/model/*.ts"],
+    "migrations": ["./src/database/migrations/*.s"],
     "cli": {
         "migrationsDir": "dist/database/migrations"
     }
